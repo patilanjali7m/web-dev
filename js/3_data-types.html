@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var sName = "Sai";
+      var rNo = 10;
+
+      document.write("Hello " + sName + " ..!");
+
+      document.write("<br>How are you " + name + "?");
+
+      document.write("<br> Student name : " + sName + " having roll no " + rNo);
+
+      // Array :
+
+      var sNames = ["Alex", "Ali", "Sai"];
+      var rNos = [10, 11, 12];
+
+      document.write("<br>arr of sNames : " + sNames);
+      console.log("Val of: sNames", sNames);
+      console.table(sNames);
+
+      document.write("<br>arr of sName : " + sNames[1]);
+      document.write(
+        "<br> Student name : " + sNames[2] + " having roll no " + rNos[2]
+      );
+
+      // object :
+
+      var sData = {
+        name: "Alex",
+        no: 10
+      };
+      console.table(sData);
+
+      document.write("<br> SData : " + sData.Name);
+    </script>
+  </body>
+</html>
