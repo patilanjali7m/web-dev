@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var sInfo = [
+        {
+          name: "Ali ",
+          no: 10,
+          age: 25
+        },
+        {
+          name: "Alex",
+          no: 11,
+          age: 24
+        },
+        {
+          name: "Sai",
+          no: 12,
+          age: 23
+        }
+      ];
+      console.log("Val of: sInfo", sInfo);
+      console.table(sInfo);
+
+      document.write(sInfo[2].name);
+
+      // object :
+
+      sInformation = {
+        name: "Alex",
+        rNo: 10,
+        age: 25,
+        isPass: true,
+        subs: ["Math", "Chem", "Bio"],
+        add: {
+          city: "Mumbai",
+          st: "MH"
+        }
+      };
+
+      document.write(sInformation.subs[1]);
+      document.write(sInformation.add.city);
+    </script>
+  </body>
+</html>
