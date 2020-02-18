@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var data = {
+        name: "Alex",
+        age: 24
+      };
+      document.write("<br> Data : " + data.name);
+
+      for (var props in data) {
+        console.log("Val of: props", data[props]);
+
+        document.write("<br> Data : " + data[props]);
+      }
+    </script>
+  </body>
+</html>

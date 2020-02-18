@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var info = {
+        name: "Ali",
+        age: 23,
+        isPass: false,
+        subs: ["Math", "Chem", "Bio"],
+        add: {
+          city: "Pune",
+          h_no: 12,
+          st: "MH"
+        }
+      };
+
+      for (var k in info) {
+        console.log("Val of: k", k);
+
+        if (typeof info[k] == "boolean") {
+          var res = "";
+          info[k] == true ? (res = "Pass") : (res = "Fail");
+          document.write("<br> Pass stat : " + res);
+        } else if (Array.isArray(info[k])) {
+          for (var arrVals of info[k]) {
+            document.write("<br>Array values : " + arrVals);
+          }
+        } else if (typeof info[k] == "object") {
+          for (var val in info[k]) {
+            console.log("Val of: val", info[k][val]);
+            document.write("<br>Obj values : " + info[k][val]);
+          }
+        } else {
+          document.write("<br> value : " + info[k]);
+        }
+      }
+    </script>
+  </body>
+</html>
