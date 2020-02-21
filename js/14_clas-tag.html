@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Ea culpa numquam quis.</p>
+    <p>Architecto delectus odio sapiente!</p>
+    <p>Quasi veritatis quis rerum.</p>
+
+    <p class="cls">Lorem, ipsum dolor.</p>
+    <div class="cls">Impedit, maxime deleniti.</div>
+    <p class="cls">Hic, debitis ea.</p>
+    <p class="cls">Nemo, cupiditate atque.</p>
+    <img src="../img/img5.jpg" width="100" alt="" class="cls" />
+    <script>
+      var ele = document.getElementsByClassName("cls");
+      ele[4].innerHTML = "hello";
+
+      var tag = document.getElementsByTagName("p");
+      console.log("Val of: tag", tag);
+
+      tag[1].innerHTML = "Hello para..!";
+      console.log("Val of: tag[1]", tag[1]);
+    </script>
+  </body>
+</html>
