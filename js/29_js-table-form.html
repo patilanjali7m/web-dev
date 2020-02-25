@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" id="firstName" />
+      <input type="button" value="send" onclick="sendData()" />
+    </form>
+
+    <table>
+      <tr>
+        <th colspan="2">User data</th>
+      </tr>
+      <tr>
+        <td>First Name :</td>
+        <td id="showFirstName"></td>
+      </tr>
+    </table>
+
+    <script>
+      function sendData() {
+        var uName = document.getElementById("firstName").value;
+        document.getElementById("showFirstName").innerHTML = uName;
+      }
+    </script>
+  </body>
+</html>
