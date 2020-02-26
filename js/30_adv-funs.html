@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var oneVar = function() {
+        return function() {
+          document.write("Hello There...!");
+        };
+      };
+      console.log("Val of:  oneVar", oneVar);
+      console.log("Val of:  2ndVar", oneVar());
+
+      oneVar()();
+
+      //-----------------------------------------
+
+      //   (function(name) {
+      //     document.write("Om " + name + "..!");
+      //   })("Sai");
+
+      //---------------------------------------
+      //   var sayHello = (name, age) =>
+      //     document.write("Hello " + name + " age " + age + "...!");
+
+      //   sayHello("Ali", 23);
+      //-----------------------------------
+      //   var sayHello = function(name) {
+      //     document.write("Hello " + name + "...!");
+      //   };
+
+      //   console.log("sayHello", sayHello);
+
+      //   sayHello("Alex");
+      //--------------------------------------------------
+      //   var sayHello = function() {
+      //     document.write("Hello World...!");
+      //   };
+
+      //   console.log("sayHello", sayHello);
+
+      //   sayHello();
+    </script>
+  </body>
+</html>
