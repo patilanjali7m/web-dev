@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        /* border: 1px solid silver; */
+        width: 25px;
+        text-align: center;
+        margin: 2px;
+        box-shadow: 3px 3px 3px silver;
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn:active {
+        box-shadow: 1px 2px 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function sendValue(num) {
+        var oldInput = 0;
+        oldInput = document.getElementById("input").value;
+        document.getElementById("input").value = oldInput + num;
+      }
+
+      function calcVal() {
+        oldInput = document.getElementById("input").value;
+        var output = eval(oldInput);
+        console.log("Val of:  output", output);
+        document.getElementById("input").value = output;
+      }
+    </script>
+
+    <input id="input" /><br />
+
+    <div
+      class="btn"
+      onclick="document.getElementById('input').value=''"
+      style="width: 75px;"
+    >
+      Clr
+    </div>
+    <br />
+
+    <div class="btn" onclick="sendValue('+')">+</div>
+    <div class="btn" onclick="sendValue('-')">-</div>
+    <div class="btn" onclick="sendValue('*')">X</div>
+    <br />
+    <div class="btn" onclick="sendValue(1)">1</div>
+    <div class="btn" onclick="sendValue(2)">2</div>
+    <div class="btn" onclick="sendValue(3)">3</div>
+    <br />
+    <div class="btn" onclick="sendValue(4)">4</div>
+    <div class="btn" onclick="sendValue(5)">5</div>
+    <div class="btn" onclick="sendValue(6)">6</div>
+    <br />
+    <div class="btn" onclick="sendValue(7)">7</div>
+    <div class="btn" onclick="sendValue(8)">8</div>
+    <div class="btn" onclick="sendValue(9)">9</div>
+    <br />
+    <div class="btn" onclick="sendValue(0)">0</div>
+    <div class="btn" onclick="calcVal()" style="width: 50px;">=</div>
+  </body>
+</html>
